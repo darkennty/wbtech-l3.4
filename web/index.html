@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processor</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Image Processor</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="image" id="imageFile" accept=".jpg, .jpeg, .png" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <div id="imageList">
+        <h2>Uploaded Images</h2>
+        <ul id="images"></ul>
+    </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
